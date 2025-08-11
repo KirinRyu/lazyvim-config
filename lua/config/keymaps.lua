@@ -11,3 +11,7 @@ map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Procurar tags d
 
 -- Configuração para o Mason
 map("n", "<leader>ma", "<cmd>Mason<cr>", { desc = "Abrir o Mason" })
+
+-- Configuração para identar a seleção visual
+map("v", "<Tab>", ">gv", { noremap = true, silent = true, desc = "Indentar seleção para a direita" })
+map("v", "<S-Tab>", "<gv", { noremap = true, silent = true, desc = "Desindentar seleção para a esquerda" })
